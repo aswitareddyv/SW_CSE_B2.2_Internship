@@ -7,10 +7,14 @@
 </head>
 <body>
     <table border="2">
+        <caption>Student listing</caption>
+        <thead>
         <tr>
             <th>SI.NO</th>
             <th>Name</th>
         </tr>
+        </thead>
+        <tbody>
         <tr>
             <td>1</td>
             <td>Aswita</td>
@@ -19,6 +23,7 @@
             <td>2</td>
             <td>chinnu</td>
         </tr>
+        </tbody>
     </table>
     
 </body>
