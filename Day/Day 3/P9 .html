@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audio tag</title>
+    <title>Audio Tag</title>
+</head>
+
+<body>
+    <p>Audio tag example</p>
+    <audio src="../audio/sample-6s.mp3" controls type="audio/mpeg"></audio>
+    <p>2</p>
+    <audio src="../audio/sample-6s.mp3" controls type="audio/mpeg" autoplay></audio>
+    <p>3</p>
+    <audio src="../audio/sample-6s.mp3" controls type="audio/mpeg" autoplay muted loop></audio>
+
+</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Tag</title>
 </head>
 <body>
-    <p>audio tag example</p>
-    <audio src=""></audio>
+    <p>Video Tag example</p>
+    <video src="../video/sampleVideo.mp4" controls type="video/mp4"></video>
+
+    <!-- width & height -->
+     <video src="../video/mp4videoWaudio.mp4" controls type="video/mp4" width="640" height="360"></video>
+
+     <!-- autoplay -->
+     <video src="sampleVideo.mp4" controls type="video/mp4" autoplay></video>
+
+     <!-- Muted -->
+    <video src="../video/mp4videoWaudio.mp4" controls autoplay muted width="640" height="360"></video>
+
+    <!-- loop -->
+    <video src="../video/mp4videoWaudio.mp4" controls loop autoplay muted width="640" height="360"></video>
+
+    <!-- poster -->
+     <video src="../video/sampleVideo.mp4" controls type="video/mp4" poster="../Images/dog.jpg"></video>
 </body>
+
 </html>
