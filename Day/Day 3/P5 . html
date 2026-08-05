@@ -1,30 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Tables</title>
+    <title>HTML Tables 2</title>
 </head>
+
 <body>
-    <table border="2">
-        <caption>Student listing</caption>
+    <!-- Table Caption  -->
+    <table border="1">
+        <caption>Student Listing</caption>
         <thead>
-        <tr>
-            <th>SI.NO</th>
-            <th>Name</th>
-        </tr>
+            <tr>
+                <th>Sl. No</th>
+                <th>Name</th>
+            </tr>
         </thead>
         <tbody>
-        <tr>
-            <td>1</td>
-            <td>Aswita</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>chinnu</td>
-        </tr>
+            <tr>
+                <td>1</td>
+                <td>Rakesh</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Sumanth</td>
+            </tr>
         </tbody>
-    </table>
-    
+        <tfoot>
+            <td>Total</td>
+            <td>2 Students</td>
+        </tfoot>
+</table>
 </body>
+
 </html>
