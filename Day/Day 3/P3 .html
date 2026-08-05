@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML forms 2</title>
+</head>
+<body>
+    <!--form validation-->
+    <form action="" method="post">
+        <fieldset>
+            <!--field set: lets us group related control-->
+            <legend>Personal information</legend>
+            <p>
+                <input type="text" name="full name" id="full name" placeholder="Enter full name*" required minlength="3" maxlength="10">
+            </p>
+            <p>
+                <input type="email" name="email" id="email" placeholder="enter email*" required>
+            </p>
+            <p>
+                <input type="password" name="password" id="password" placeholder="enter password" minlength="3" maxlength="10" required>
+            </p>
+            <p>
+                <input type="number" name="age" id="age" placeholder="enter age" min="1" max="100" required>
+            </p>
+            <p>
+                <input type="tel" name="phone" id="phone"
+                pattern="[0-9]{10}"
+                title="Enter the mobile number"
+                required
+                placeholder=""Mobile number">
+            </p>
+            <p>
+                <input type="date"  id="dob" min="1990-01-01" max="2010-01-01">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Preferences</legend>
+            <p>Gender:</p>
+            <p>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">Male</label>
+                <input type="text" name="gender" id="female" value="female">
+                <label for="female">Female</label>
+            </p>
+            <p>skills
+                
+            </p>
+        </fieldset>
+
+    </form>
+</body>
+</html>
