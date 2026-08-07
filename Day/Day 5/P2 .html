@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector : Sibiling selector |Attribute selector |Pseudo-selector</title>
+    <style>
+        /*Sibiling selector*/
+        h2+p{
+            color: chocolate;
+        }
+       /* --Atribute selector--*/
+        input[type= "text"]{
+              border: 0cap  solid blue;
+        }
+        /*pseud0-selector*/
+        input:focus{
+            outline: 2px solid red ;
+        }
+        /*pseudo-class selector (:)*/
+        input:focus{
+            outline: 2px solid blue;
+        }
+        a:hover{
+            background-color: chartreuse;
+        }
+        /*pseudo-element selector (::)*/
+         p::first-letter{
+            font-family: 200%;
+         }
+    </style>
+</head>
+<body>
+    <h2>Css selector</h2>
+    <P>Sibiling selector: selects the element which are next to each other</P>
+    <p>One more paragraph</p>
+    <h2>Heading tag</h2>
+    <a href="#">Click here</a>
+
+    <!--Atribute selector-->
+    <input type="text" name="" id="" placeholder="Email User name">
+</body>
+</html>
