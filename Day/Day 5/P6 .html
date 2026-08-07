@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Flexbox |display |flex direction</title>
+    <title>CSS Flexbox |display |flex direction |justify-content </title>
     <style>
         .container{
             display: flex;
@@ -16,7 +16,8 @@
             color: crimson;
             padding: 15px;
             text-align: center;
-            flex-direction: column-reverse;
+            justify-content: center;
+            flex-direction: column;
         }
        .container2{
             display: flex;
@@ -26,11 +27,27 @@
             margin-top: 20px;
         }
         .item2{
-            background-color: blue;
+            background-color: red;
             color: crimson;
             padding: 15px;
             text-align: center;
             flex-direction:row;
+            justify-content:center;
+        } 
+         .container3{
+            display: flex;
+            border: 2px solid red;
+            gap: 10px;
+            padding: 10px;
+            margin-top: 20px;
+        justify-content: space-evenly;
+        }
+        .item3{
+            background-color: chartreuse;
+            color: crimson;
+            padding: 15px;
+            flex-direction:row;
+            margin-top: 10px;
         } 
     </style>
 </head>
@@ -44,10 +61,17 @@
          <div class="item">Item 2</div>
          <div class="item">Item 3</div>
     </div>
+    <!--flex direction-->
     <div class="container 2">
          <div class="item2">Item 1</div>
          <div class="item2">Item 2</div>
          <div class="item2">Item 3</div>
+    </div>
+    <!--justify content-->
+     <div class="container 3">
+         <div class="item3">Item 1</div>
+         <div class="item3">Item 2</div>
+         <div class="item3">Item 3</div>
     </div>
 </body>
 </html>
