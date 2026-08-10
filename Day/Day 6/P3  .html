@@ -90,6 +90,23 @@
             padding: 10px;
             text-align: center;
         }
+        /*grid item placement*/
+        .placement-grid{
+              display: grid;
+              grid-template-columns: repeat(4,1fr);
+              grid-template-rows: repeat(3,80px);
+              gap: 10px;
+              background-color: #867292;
+        }
+        .placement-grid .item1{
+            grid-column: 1/4;
+        }
+        .placement-grid .item2{
+            grid-row: 2/4;
+        }
+        .placement-grid .item3{
+            grid-column: 3 / span 4;
+        }
     </style>
 </head>
 <body>
@@ -128,6 +145,16 @@
             <main class="main">Main Content</main>
             <footer class="footer">Footer</footer>
         </div>
+    </section>
+    <section>
+        <h2>3. Grid Item placement(grid-column, grid-row, span) </h2>
+        <div class="placement-grid">
+        <div class="box item1">Item1</div>
+        <div class="box ">Item2</div>
+        <div class="box item2">Item3</div>
+        <div class="box ">Item4</div>
+        <div class="box item3">Item5</div>
+        <div class="box ">Item6</div>
     </section>
 </body>
 </html>
