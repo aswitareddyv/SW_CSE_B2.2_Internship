@@ -1,12 +1,12 @@
-//checking conditions in arrays
-const nums = [2,4,6,7]
-const hasodd = nums.some(n=>n%2!==0);
-console.log(hasodd);
+// Checking conditions in arrays
+const nums = [2,4,6,7];
+const hasOdd = nums.some(n=>n%2!==0);
+console.log(hasOdd);
 
-const haseven = nums.some(n=>n%2==0);
-console.log(haseven);
+const hasEven = nums.some(n=>n%2===0);
+console.log(hasEven);
 
-//sorting and reversing
+// Sorting and reversing
 // sort
 const nums2 = [10,2,5,20];
 const names = ["Rakesh","Bipin","Suresh","Ankita","Keerthi"];
@@ -66,3 +66,8 @@ return x + y + z;
 }
 const nums3 = [1, 2, 3];
 console.log(sum(...nums3)); // 6
+
+// Unique values:
+const arr2 = [1,8,2,3,3,4,5,4,6,4,7,8];
+const unique = [...new Set(arr2)];
+console.log(unique);
