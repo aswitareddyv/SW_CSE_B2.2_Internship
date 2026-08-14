@@ -10,6 +10,8 @@
     <p id="it">inner text</p>
     <p id="ih">inner HTML</p>
 
+    <button id="changeBtn">Click for change</button>
+
     <script>
         const tce = document.getElementById("tc");
         console.log(tce.textContent);
@@ -22,6 +24,14 @@
         const ihe = document.getElementById("ih");
         console.log(ihe.textContent);
         ihe.innerHTML = "<strong><i>innerHTML</i> changed via JS; example</strong>";
+
+        const changeBtn = document.getElementById("changeBtn");
+        changeBtn.addEventListener("click",function(){
+            tce.textContent = "textContent example.After the button is clicked.";
+            ite.innerText = "innertext changed via js example.After the button is clicked.";
+            ihe.innerHTML = "<strong><i>innerHTML</i> changed via JS example.After the button is clicked.</strong>";
+        });
     </script>
 </body>
 </html>
+
