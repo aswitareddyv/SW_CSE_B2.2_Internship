@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading and changing content</title>
+</head>
+<body>
+    <p id="tc">Hello</p>
+    <p id="it">inner text</p>
+    <p id="ih">inner HTML</p>
+
+    <script>
+        const tce = document.getElementById("tc");
+        console.log(tce.textContent);
+        tce.textContent = "textContent example";
+
+        const ite = document.getElementById("it");
+        console.log(ite.textContent);
+        ite.innerText = "innertext changed via js example";
+
+        const ihe = document.getElementById("ih");
+        console.log(ihe.textContent);
+        ihe.innerHTML = "<strong><i>innerHTML</i> changed via JS; example</strong>";
+    </script>
+</body>
+</html>
