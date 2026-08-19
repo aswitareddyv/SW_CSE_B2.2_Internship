@@ -1,18 +1,25 @@
-import { Welcome } from "./components/P1";
-import { ProductCard } from "./components/P2";
-import './App.css'
-function App() {
-  
-  return (
-    <>
-     <Welcome name="Aswita"/>
-     <ProductCard 
-     name="Sony ULT Wear Noise Cancellation Wireless Bluetooth Over Ear Headphones with Massive Bass"
-     price={15999}
-     image="https://m.media-amazon.com/images/I/610DB8Cwm7L._SY450_.jpg" />
-     
-    </>
-  )
+// Child component
+function ButtonWithAction({label,onClick}) {
+    return(
+        <button className="action-btn" onClick={onClick}>{label}</button>
+    );
 }
 
-export default App
+// Parent component
+function ButtonDemo() {
+    function handleGreet() {
+        alert("Hello from parent!");
+    }
+
+    function handleShowInfo() {
+        alert("Info button clicked");
+    }
+
+    return(
+        <>
+            <h2>Buttons with props</h2>
+            <ButtonWithAction label="Greet" onClick={handleGreet}/>
+            <ButtonWithAction label="Show Info" onClick={handleShowInfo}/>
+        </>
+    );
+}
