@@ -4,6 +4,7 @@ import headphones from "./assets/sony.jpg";
 import ButtonDemo from "./components/P3";
 import Counter from "./components/StateExampleOne";
 import "./App.css";
+import ToggleText from "./components/StateexampleTwo";
 
 function App() {
   return (
