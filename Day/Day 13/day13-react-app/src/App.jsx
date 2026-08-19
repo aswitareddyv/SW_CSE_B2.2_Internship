@@ -1,25 +1,27 @@
-// Child component
-function ButtonWithAction({label,onClick}) {
-    return(
-        <button className="action-btn" onClick={onClick}>{label}</button>
-    );
+import { Welcome } from "./components/P1";
+import { ProductCard } from "./components/P2";
+import headphones from "./assets/sony.jpg";
+import ButtonDemo from "./components/P3";
+import Counter from "./components/StateExampleOne";
+import "./App.css";
+
+function App() {
+  return (
+    <>
+      <Counter />
+      
+      <Welcome name="Rakesh" />
+
+      <ButtonDemo />
+
+      <ProductCard
+        //  name="Sony ULT Wear Noise Cancellation Wireless Bluetooth Over Ear Headphones with Massive Bass"
+        price={15999}
+        //  image="https://m.media-amazon.com/images/I/610DB8Cwm7L._SY450_.jpg"
+        image={headphones}
+      />
+    </>
+  );
 }
 
-// Parent component
-function ButtonDemo() {
-    function handleGreet() {
-        alert("Hello from parent!");
-    }
-
-    function handleShowInfo() {
-        alert("Info button clicked");
-    }
-
-    return(
-        <>
-            <h2>Buttons with props</h2>
-            <ButtonWithAction label="Greet" onClick={handleGreet}/>
-            <ButtonWithAction label="Show Info" onClick={handleShowInfo}/>
-        </>
-    );
-}
+export default App;
