@@ -5,6 +5,7 @@ import ButtonDemo from "./components/P3";
 import Counter from "./components/StateExampleOne";
 import "./App.css";
 import ToggleText from "./components/StateexampleTwo";
+import NameInput from "./components/Stateexamplethree";
 
 function App() {
   return (
